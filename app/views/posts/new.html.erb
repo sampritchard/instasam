@@ -1,5 +1,11 @@
+<div class="form-wrapper">
 <%= simple_form_for @post do |f| %>
+  <div class="form-group">
   <%= f.input :image %>
+  <div class="button-center">
   <%= f.input :caption %>
-  <%= f.button :submit %>
+  <%= f.button :submit, class: 'btn-success' %>
 <% end %>
+</div>
+</div>
+</div>
