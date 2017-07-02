@@ -6,5 +6,10 @@
   </head>
   <body>
 
+    <% @posts.each do |post| %>
+    <%= image_tag post.image.url(:medium) %>
+    <%= post.caption %>
+    <% end %>
+
   </body>
 </html>
