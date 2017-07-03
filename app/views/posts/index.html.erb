@@ -6,11 +6,13 @@
   </head>
 
   <body>
+    <h4> Welcome <%= current_user.email %> </h4>
     <div class="posts-wrapper", "row">
     <% @posts.each do |post| %>
     <div class="post">
       <div class="post-head">
         <div class="name">
+          <%= post.user.email %>
           <div class="image">
             <div class="center-block">
     <%= link_to (image_tag post.image.url(:medium), class:'img-responsive'), post_path(post) %>
